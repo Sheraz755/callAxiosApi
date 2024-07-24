@@ -4,6 +4,7 @@ async function fetchData() {
 	const callApiData = await axios.get(
 		"https://jsonplaceholder.typicode.com/todos/1",
 	);
+	console.log("checking ...");
 	console.log(callApiData.data);
 	displayData(callApiData.data);
 }
